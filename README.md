@@ -57,3 +57,9 @@ Configuración MariaDB
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/ae7088bd-b859-494a-8d06-2d696a68665e)
 
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/a86dc7c5-a67f-4d7d-aa52-3aebb80f704f)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/da28256f-addf-471f-89ba-70d7accd2385)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/5294f837-4fc6-45e3-b16b-9d77d79671ea)
+
