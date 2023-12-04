@@ -7,7 +7,7 @@ Configuración del balanceador de carga
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/ac721478-a76b-450b-a988-c1d1d503006d)
 
-![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/b35124ef-da6f-4464-9e87-83be3920dff7)
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/3a777008-b32e-42bd-bd56-d1e135b98993)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/8e376885-a9a8-4b70-b500-5f7234504cdd)
 
@@ -59,7 +59,14 @@ Configuración MariaDB
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/a86dc7c5-a67f-4d7d-aa52-3aebb80f704f)
 
-![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/da28256f-addf-471f-89ba-70d7accd2385)
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/954a8df6-e7a2-4c43-85a5-9a2400d569f1)
 
-![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/5294f837-4fc6-45e3-b16b-9d77d79671ea)
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/5592ba90-c98e-4f7d-8766-30c56ac29e2b)
 
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/cb06437f-18b4-4c05-b1d6-041654457f3c)
+
+Resultado 
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/d9dcda1b-eff1-46b5-b206-d5b327bbf010)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/a841c8ee-68e2-4eb6-92dc-db1223345d68)
