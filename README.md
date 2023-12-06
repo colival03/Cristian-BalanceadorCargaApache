@@ -34,8 +34,6 @@ Configuración del balanceador de carga
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/8e376885-a9a8-4b70-b500-5f7234504cdd)
 
-![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/99975931-1e39-42e3-96a4-6d155ca7e1bf)
-
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/80ec8833-3679-435b-aa9e-49285aab2f6f)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/841db77e-8ac8-4042-aab3-0f01e1b5b99c)
