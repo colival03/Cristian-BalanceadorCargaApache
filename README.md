@@ -5,10 +5,11 @@
 1. [Introducción](#introducción)
 2. [Configuración de infraestructura en AWS](#configuración-de-infraestructura-en-AWS)
 3. [Configuración del balanceador de carga](#configuración-del-balanceador-de-carga)
-4. [Configuración Apache1](#configuración-apache1)
-5. [Configuración apache2](#configuración-apache2)
+4. [Configuración Apache 1](#configuración-apache-1)
+5. [Configuración Apache 2](#configuración-apache-2)
 6. [Configuración MariaDB](#configuración-MariaDB)
-7. [Resultado](#resultado) 
+7. [Resultado](#resultado)
+8. [Conclusión](#conclusión) 
 
 # Introducción
 
@@ -103,7 +104,9 @@ Por último, tendremos que reiniciar el servicio.
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/4bc582b7-02e2-4cba-a22a-6e6db516059b)
 
-Configuración Apache 2
+# Configuración Apache 2
+
+Para nuestro segundo servidor apache tan solo tendremos que reallizar los mismos pasos que para el servidor apache 1.
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/b79c766b-e683-4aa5-a105-29157fa33ed8)
 
@@ -115,7 +118,9 @@ Configuración Apache 2
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/2eb47554-504f-4999-8233-ecbb7aefd43a)
 
-Configuración MariaDB
+# Configuración MariaDB
+
+En nuestra configuración del servidor de base de datos instalaremos mariadb-server, una vez instalado modificaremos el "bind-address" que se encuentra en el fichero "50-server.cnf" en la ruta "/etc/mysql/mariadb.conf.d" en la que tendremos que poner la ip de la máquina de base de datos en nuestro caso es "192.168.2.185".
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/c65e327b-aab3-4534-8754-b692513229af)
 
@@ -125,16 +130,25 @@ Configuración MariaDB
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/ae7088bd-b859-494a-8d06-2d696a68665e)
 
+Lo siguiente que haremos será crear un usuario desde el root y le damos todos los permisos sobre la base de datos de la aplicación que queremos lanzar. En nuestro caso la base de datos se llama "lamp_db", el usuario creado "cristian_12"
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/a86dc7c5-a67f-4d7d-aa52-3aebb80f704f)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/954a8df6-e7a2-4c43-85a5-9a2400d569f1)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/5592ba90-c98e-4f7d-8766-30c56ac29e2b)
 
+Comprobamos que podamos acceder con el usuario creado.
+
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/cb06437f-18b4-4c05-b1d6-041654457f3c)
 
-Resultado 
+# Resultado 
+
+Y por último, este es el resultado que hemos obtenido y está completamente en funcionamiento. En la segunda imagen se puede ver como al añadir usuarios se añaden correctamente.
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/d9dcda1b-eff1-46b5-b206-d5b327bbf010)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/a841c8ee-68e2-4eb6-92dc-db1223345d68)
+
+# Conclusión
+
+En esta práctica, ha resultado compleja por la parte de la configuración de la infraestructura en AWS aunque la parte de configuración de los distintos servidores ha resultado menos compleja la práctica. Aunque al final ha salido el objetivo principal de la práctica el cual era lanzar la apllicación de los usuarios y que funcione correctamente.  
