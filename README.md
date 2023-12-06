@@ -1,18 +1,48 @@
 # Cristian-BalanceadorCargaApache
-Introducción
 
-Configuración de infraestructura en AWS
+## Índice
+
+1. [Introducción](#introducción)
+2. [Configuración de infraestructura en AWS](#configuración-de-infraestructura-en-AWS)
+3. [Configuración del balanceador de carga](#configuración-del-balanceador-de-carga)
+4. [Configuración Apache1](#configuración-apache1)
+5. [Configuración apache2](#configuración-apache2)
+6. [Configuración MariaDB](#configuración-MariaDB)
+7. [Resultado](#resultado) 
+
+# Introducción
+
+Para esta práctica nuestro objetivo es el siguiente, poder lanzar una aplicación de usuarios mediante una infraestructura de capa 3, es decir, que lo que necesitaremos y  hemos utilizado es lo siguiente: un balanceador de carga, dos servidores apache y un servidor de base datos.
+
+La configuración y lanzamiento de esta infraestructura se llevará a cabo desde AWS, el cual nos permitirá gestionar, modificar y configurar de una manera sencilla, la cual se explicará más adelante.
+
+# Configuración de infraestructura en AWS
+
+En primer lugar, el balanceador de carga se le ha asociado una ip elástica ya que el balanceador tiene que tener salida a internet y también la ip privada asociada de una subred. 
+
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/ac532f30-1c55-48a9-9970-f8e76995ce22)
+
+En la máquina "Apache1" lo único que se le ha asociado ha sido a una subred para tener ip privada en la que se encuentra dentro de una red interna con el servidor "Apache2" y también por supuesto dentro de la red principal con el "BalanceadorCarga".
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/c1bab7bf-e055-4ddd-860a-3bb3d958db2a)
 
+En la máquina de "Apache2" como ya se ha explicado anteriormente tendrán que encontrarse en la misma subred, ya que estos dos servidores son los servidores backend en los que posteriormente se llevará a cabo la configuración de la aplicación de usuarios.
+
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/67705cef-f3d4-4c98-a391-4dc66d328072)
+
+En la máquina "Datos" tampoco tiene asociada ninguna ip pública ya que no queremos que tenga salida a internet porque no lo tiene que tener ya que esta máquina la utilizaremos para almacenar los datos de dicha aplicación de usuarios.
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/dbf3fd23-120c-485f-b6ac-aa880f597223)
 
+Para esta práctica, lo que hemos utilizado ha sido un certificado con certbot el cual se explicará más detalladamente adelante.
+
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/bb3c7083-a758-4551-b2d6-8c26d649c905)
 
+Ahora pasaremos a explicar la configuración de los grupos de seguridad, estas son las reglas que se le han añadido al grupo de seguridad del balanceador, las cuales son: HTTP,HTTPS,MYSQL,SSH,ICMP y se permite y se deniega el tráfico solo en este grupo de seguridad.
+
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/6ba6341b-9121-4676-a419-0d69cdfd8a46)
+
+En los siguientes tres grupos de seguridad, le hemos añadido las mismas reglas de entrada que las cuales son: HTTP,HTTPS,MYSQL,SSH e ICMP.
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/5a7d974b-e6e8-4ce6-8234-864d0a7077e8)
 
@@ -21,7 +51,6 @@ Configuración de infraestructura en AWS
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/be562e73-685f-46c1-bec7-d109d08fd00c)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/9803ed37-4e94-470d-95f8-a07a8985c297)
-
 
 Configuración del balanceador de carga
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/cc6b1fd9-d50b-47f3-b202-8db1b46b4b97)
