@@ -1,4 +1,27 @@
 # Cristian-BalanceadorCargaApache
+Introducción
+
+Configuración de infraestructura en AWS
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/ac532f30-1c55-48a9-9970-f8e76995ce22)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/c1bab7bf-e055-4ddd-860a-3bb3d958db2a)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/67705cef-f3d4-4c98-a391-4dc66d328072)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/dbf3fd23-120c-485f-b6ac-aa880f597223)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/bb3c7083-a758-4551-b2d6-8c26d649c905)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/6ba6341b-9121-4676-a419-0d69cdfd8a46)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/5a7d974b-e6e8-4ce6-8234-864d0a7077e8)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/5f272a29-6458-4047-b685-5efbc41a668a)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/be562e73-685f-46c1-bec7-d109d08fd00c)
+
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/9803ed37-4e94-470d-95f8-a07a8985c297)
+
 
 Configuración del balanceador de carga
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/cc6b1fd9-d50b-47f3-b202-8db1b46b4b97)
