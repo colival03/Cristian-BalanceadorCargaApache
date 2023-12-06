@@ -52,36 +52,54 @@ En los siguientes tres grupos de seguridad, le hemos añadido las mismas reglas 
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/9803ed37-4e94-470d-95f8-a07a8985c297)
 
-Configuración del balanceador de carga
+# Configuración del balanceador de carga
+
+Para comenzar con la configuración de nuestro balanceador de carga instalaremos apache y permitiremos los permisos que se encuentran en la imagen y después de haberlos activado tendremos que reiniciar el servicio para guardar la configuración.
+
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/cc6b1fd9-d50b-47f3-b202-8db1b46b4b97)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/4411fe26-1331-47c4-90f1-97e82749d9c5)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/ac721478-a76b-450b-a988-c1d1d503006d)
 
-![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/3a777008-b32e-42bd-bd56-d1e135b98993)
+Para nuestro siguiente paso, tendremos que editar nustro fichero de configuración del balanceador en nuestro caso se llama "balanceador.conf" y en el añadiremos lo siguiente: server1 con la ip de la máquina "Apache1" y server2 con la ip de la máquina "Apache2".
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/8e376885-a9a8-4b70-b500-5f7234504cdd)
 
+![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/3a777008-b32e-42bd-bd56-d1e135b98993)
+
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/80ec8833-3679-435b-aa9e-49285aab2f6f)
 
+Para crear un certificado válido necesitaremos certbot, para ello tendremos que instalar los siguientes paquetes.
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/841db77e-8ac8-4042-aab3-0f01e1b5b99c)
+
+Para registrar nuestro certificado, el cual utilizaremos posteriormente para desplegar nuestra aplicación, certbot nos pedirá una serie de datos y al acabar ya tendremos nuestro certificado listo para usarse.
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/d501c28e-82e4-4c07-9ba6-caf65b0a79d2)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/b247f4d0-d39b-40d0-a9f9-ba137bd8c007)
 
-Configuración Apache 1
+# Configuración Apache 1
+
+Para la configuración de nuestro primer servidor apache tendremos que instalar apache, mariadb-client y git.
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/89a57485-0dc4-4e2f-973f-0dbf100a4476)
 
+Para traer la aplicación de usuarios de git al servidor apache realizaremos un git clone con la url en la ruta "/var/www/html", después de hacer esto le hemos cambiado el nombre para mayor comodidad le hemos puesto "appUsuarios".
+
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/5257d64a-1506-4781-aab6-a3041d1d3917)
 
+Para nuestro siguiente paso tendremos que cambiar el "DocumentRoot" que se encuentra en el fichero de configuración que en nuestro caso se llama "apache1.conf".
+
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/9f451ceb-8d5c-4faf-b92b-75005b8890da)
+
+Hemos copiado el fichero de configuración acabado en "-ssl.conf" ya que hemos realizado la práctica mediante HTTPS y después de editar lo anteriormente mencionado tendremos que activar el fichero que acabamos de copiar y editar.
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/418b0d6d-bcc4-4041-9de4-db80c81aa542)
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/24bdb01d-b9ff-4663-9db9-8f8db9f5a98b)
+
+Por último, tendremos que reiniciar el servicio.
 
 ![image](https://github.com/colival03/Cristian-BalanceadorCargaApache/assets/146434716/4bc582b7-02e2-4cba-a22a-6e6db516059b)
 
